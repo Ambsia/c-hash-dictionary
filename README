@@ -1,0 +1,44 @@
+Author: Alex Boseley, P12189646.
+
+Purpose: 
+This application reads text files passed as parameters and extracts the word and description and inserts them into a hash table using the word to create a unique key, these words can be looked up. The applications functionality allows words to be inserted, deleted and looked up.
+
+Manifest: 
+d_run.c - Used to run the application, passes file names found to dictionary.c, then waits for a word to be input and looked up using dictionary.c.
+
+dictionary.c - Used by d_run.c to insert words with their descriptions into a hash table and then tries to locate any word typed into the terminal.
+
+dictionary.h - Used by dictionary.c to define certain functions.
+
+any.h - Used by dictionary.c and ht.c to type cast void * to any.
+
+ht.c - Implementation of a hash table, has functionality to initialise a hash table, insert items, lookup items and delete items.
+
+ht.h - Used by ht.c and dictionary.c to define the functionality of ht.c and constant values used in both ht.c and dictionary.cd
+
+makefile - Used to build all of the library and to build the exe d_run. This file has functionality to clean the directory of .o files etc, also offers functionality to build a tar file of all source files.
+
+Install Instructions: 
+All of the files must be within the same directory, when they are open your terminal and change directory to the one with the source files, and then enter "make" within the terminal. This should build needed libraries and the run file.
+
+Usage Instructions:
+When you have built the libraries needed and the run file, in the terminal you should type ./d_run. This will run the application, although no words/descriptions would have been read in, to pass the application files to be read you must type ./d_run d1.txt (d1.txt being the file you want to be read in).
+
+Known Bugs: 
+The biggest word that can be stored within the hash table is equivalent or less than to 38 Z's.
+
+Implementation Notes:
+This dictionary implementation has a unique word for every description, meaning I could create a unique key with that word. This is a reason I choose to implement a hash table, hash tables also offer great performance due to when inserting a word into a hash table all you need to locate it is the unique key that represents it.
+
+
+
+
+
+
+
+
+
+
+
+
+
