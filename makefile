@@ -21,9 +21,9 @@ zip:
 	/bin/rm -rf dictionarySource
 	mkdir dictionarySource
 	cp $(sourcefiles) dictionarySource/
-	tar cvf P12189646.tar dictionarySource
-	/bin/rm -f P12189646.tar.gz
-	gzip P12189646.tar
+	tar cvf .tar dictionarySource
+	/bin/rm -f .tar.gz
+	gzip .tar
 	/bin/rm -rf dictionarySource
 	
 	
