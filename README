@@ -1,4 +1,4 @@
-Author: Alex Boseley, P12189646.
+Author: Alex Boseley
 
 Purpose: 
 This application reads text files passed as parameters and extracts the word and description and inserts them into a hash table using the word to create a unique key, these words can be looked up. The applications functionality allows words to be inserted, deleted and looked up.
